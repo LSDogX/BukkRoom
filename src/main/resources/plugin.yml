@@ -1,0 +1,6 @@
+name: BukkRoom
+main: fun.LSDog.BukkRoom.BukkRoom
+version: 1.0
+author: LSDog
+
+load: STARTUP
