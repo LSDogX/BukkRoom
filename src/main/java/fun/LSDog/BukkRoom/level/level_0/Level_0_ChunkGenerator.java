@@ -23,7 +23,7 @@ public class Level_0_ChunkGenerator extends ChunkGenerator {
 
     protected static final int FLOOR_Y = 0;
     protected static final int CEILING_Y = 5;
-    private static final MaterialData yellowWool = new MaterialData(Material.WOOL);
+    protected static final MaterialData yellowWool = new MaterialData(Material.WOOL);
 
     static {
         yellowWool.setData(DyeColor.YELLOW.getWoolData());
@@ -47,6 +47,7 @@ public class Level_0_ChunkGenerator extends ChunkGenerator {
     public List<BlockPopulator> getDefaultPopulators(World world) {
         List<BlockPopulator> blockPopulatorList = new ArrayList<BlockPopulator>();
         blockPopulatorList.add(new LightPopulator());
+        blockPopulatorList.add(new WallPopulator());
         return blockPopulatorList;
     }
 }
